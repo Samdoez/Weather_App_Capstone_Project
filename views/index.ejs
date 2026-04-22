@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="s1">
+        <div class="headin1">
+            <h1>Daily Weather Report</h1>
+            <p>You can check out the Weather report of your city!</p>
+        </div>
+
+        <div class="headin2"> 
+            <h2 class="spacing">Lets check out your City currents weather now!</h2>
+            
+            <form action="/get_weather" method="POST">
+                <label for="city">Enter your City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <button class="btn1" type="submit">Submit</button>
+            </form>
+            
+            <% if (weather) { %>
+                <div class="weather">
+                    <p>Temperature: <%= weather.main.temp %> </p>
+                    <p>Condition: <%= weather.weather[0].main %> (<%= weather.weather[0].description %>) </p>
+                </div>
+            <% } %>
+
+        </div>
+     
+    </section> 
+</section>
+</body>
+</html>

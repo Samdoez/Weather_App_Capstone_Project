@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: garet;
+}
+.body{
+    height: 100vh;
+    background-color: #ffefef;
+    padding: 20%;
+}
+.s1, .headin2{
+    padding: 1%;
+}
+.s1{
+    height: 65vh;
+    background-color: rgb(108, 174, 204);
+}
+.headin1, .headin2{
+    text-align: center;
+}
+.headin1{
+    margin-bottom: 3%;
+}
+.headin2{
+    background-color: rgb(53, 75, 114);
+    color:aliceblue;
+    height: 40vh;
+}
+.spacing{
+    padding: 1%;
+}
+.btn1{
+    padding: 1%;
+    background-color: rgb(108, 174, 204);
+    color: white;
+    border: none;
+    height: 40px;
+    width : 10vw;
+    text-align: center;
+    cursor: pointer;
+   /* border-radius: 5px; */    
+}
+.weather{
+    height: 11vh;
+    background-color: rgb(54, 139, 179);
+    margin: 1%;
+    padding: 1%;
+}
